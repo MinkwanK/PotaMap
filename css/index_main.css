@@ -1,0 +1,63 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5em;
+}
+
+.potamap__desc {
+    width: 50%;
+}
+
+.potamap__desc-border {
+    width: 100%;
+    font-size: var(--font-size-desc);
+    font-weight: normal;
+    border-radius: 20px;
+}
+
+.potamap__desc-img {
+    width: 100px;
+    animation-name: potamap__desc-img-upAndDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.roadmap {
+    display: flex;
+    flex-direction: column;
+}
+
+.roadmap__border {
+    width: 200px;
+    border: 4px solid var(--color-border);
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.roadmap__border-title {
+    font-size: var(--font-size-desc);
+    font-weight: bold;
+}
+
+.roadmap__border-desc {
+    font-size: var(--font-size-normal);
+}
+
+@keyframes potamap__desc-img-upAndDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20%);
+    }
+}

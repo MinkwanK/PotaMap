@@ -1,0 +1,24 @@
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-header);
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__title a {
+    font-size: var(--font-size-title);
+    color: var(--color-border);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 4px solid var(--color-header);
+    transition: all 1s ease;
+}
+
+.header__title a:hover {
+    border-bottom: 4px solid var(--color-border);
+}

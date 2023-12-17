@@ -1,0 +1,58 @@
+@import url(header.css);
+@import url(index_main.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: "Dongle";
+    src: url("../font/Dongle-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Dongle";
+    src: url("../font/Dongle-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Dongle";
+    src: url("../font/Dongle-Light.ttf");
+    font-weight: lighter;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-main);
+    font-family: "Dongle", sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: inherit;
+    margin: 0;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+:root {
+    /* 기존 색 */
+    --color-header: white;
+    --color-border: black;
+    --color-main: white;
+    --font-size-title: 44px;
+    --font-size-desc: 32px;
+    --font-size-normal: 24px;
+    --font-size-footer: 24px;
+}

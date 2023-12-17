@@ -1,0 +1,6 @@
+footer {
+    height: 50px;
+    text-align: center;
+    font-size: var(--font-size-footer);
+    font-weight: lighter;
+}
